@@ -24,7 +24,7 @@ class AlexTest():
         print(self.classes.get(np.argmax(pred[0].detach().numpy())))
 
 def loadImg():
-    rimg = Image.open('/home/hanlei/桌面/dog.png').convert('RGB')           #将四通道的RGBA图像专成RGB图像
+    rimg = Image.open('/home/han/桌面/dog.png').convert('RGB')           #将四通道的RGBA图像专成RGB图像
     rimg = rimg.resize((224,224))
     return rimg
 
